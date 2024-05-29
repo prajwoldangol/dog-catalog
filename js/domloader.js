@@ -40,7 +40,7 @@ export const loadDogListOnPageLoad = (listOfDogs, container, linkImage) => {
 
     const contentRight = document.createElement("a");
     contentRight.classList.add("content-right");
-    contentRight.href = "/pages/dog-details.html?id=" + dog.id;
+    contentRight.href = "/dog-catalog/pages/dog-details.html?id=" + dog.id;
     const imgArrow = document.createElement("img");
     imgArrow.src = linkImage;
     imgArrow.alt = "view more icon";
