@@ -1,6 +1,6 @@
 const logout = () => {
   localStorage.removeItem("loggedInUser");
-  window.location.href = "/pages/login.html";
+  window.location.href = "/dog-catalog/pages/login.html";
 };
 const isLoggedIn = () => {
   return localStorage.getItem("loggedInUser") !== null;
