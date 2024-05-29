@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu+Sans:ital,wght@0,100..800;1,100..800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="../css/index.css">
+    <title>Register A New Account</title>
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <nav>
+                <ul id="navigation">
+                    <li><a href="../index.html">Home</a></li>
+                    <li id="viewPets"><a href="pets.html">View All Pets</a></li>
+
+
+                    <li style="margin-left:auto;" id="loginMenu"><a href="login.html" class="btn">Login</a></li>
+
+                    <li id="registerMenu"><a href="register.html" class="btn btn-purple">Sign Up</a></li>
+                    <li style="display:none;" id="logoutMenu"><a href="#" class="btn">Logout</a></li>
+                </ul>
+
+            </nav>
+        </div>
+    </header>
+    <main>
+
+        <section id="login">
+
+
+            <div class="form-container">
+                <div class="img-wrap-register">
+                    <img src="../images/header-bg.png" alt="" srcset="">
+                </div>
+                <form class="form" id="registerForm">
+                    <h2>Register</h2>
+                    <input type="text" name="username" id="username" placeholder="Username" autocomplete="off" required>
+                    <input type="password" name="password" id="password" placeholder="Password" autocomplete="off"
+                        required>
+                    <input type="password" name="password2" id="password2" placeholder="Confirm Password" required
+                        autocomplete="off">
+                    <button type="submit" class="btn btn-dark login">Sign Up</button>
+                    <p class="form-suggestion"> Have Account ? <a href="/pages/login.html"> Login Here</a></p>
+                </form>
+
+
+            </div>
+
+
+
+        </section>
+
+    </main>
+    <footer>
+        <p>
+            © 2024 Pet Adoption Center | Contact : + 407-2568-8877
+        </p>
+    </footer>
+</body>
+
+<script type="module" src="../js/register.js"></script>
+<script type="module" src="../js/logout.js"></script>
+
+</html>

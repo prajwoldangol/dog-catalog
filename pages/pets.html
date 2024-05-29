@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu+Sans:ital,wght@0,100..800;1,100..800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="../css/index.css">
+    <title>View all Pets</title>
+    <style>
+        #listing {
+            background: transparent;
+            margin-top: 2rem;
+        }
+
+        .filter {
+            margin-block: 2rem;
+            padding: 1.5rem;
+            background: rgba(255, 255, 255, 0.35);
+            border-radius: 1rem;
+        }
+
+        .filter-form {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 3rem;
+            justify-content: center;
+
+        }
+
+        .filter-by {
+            display: flex;
+            flex-direction: column;
+            flex-basis: 15rem;
+            text-align: center;
+            /* justify-content: center; */
+
+        }
+
+        .filter-by label {
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+            font-size: 1.25rem;
+        }
+
+        .filter-by:last-child {
+            flex-basis: 10rem;
+            padding: 1rem;
+        }
+
+        select {
+
+            height: 2.5rem;
+            cursor: pointer;
+            outline: none;
+            font-size: 1.2rem;
+            padding-inline: 1rem;
+            border: 2px solid #000000;
+            border-radius: 0.5rem;
+            font-weight: 500;
+
+        }
+
+        select:focus {
+            outline: none;
+            border-color: #6045c8;
+        }
+
+        .filter-by>a {
+            cursor: pointer;
+            margin-top: 0.5rem;
+            padding-block: 1rem;
+            font-size: 1rem;
+
+        }
+
+        p.no-result {
+            text-align: center;
+            font-size: 2rem;
+            font-weight: 600;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <nav>
+                <ul id="navigation">
+                    <li><a href="../index.html">Home</a></li>
+                    <li id="viewPets"><a href="pets.html">View All Pets</a></li>
+
+
+                    <li style="margin-left:auto;" id="loginMenu"><a href="login.html" class="btn">Login</a></li>
+
+                    <li id="registerMenu"><a href="register.html" class="btn btn-purple">Sign Up</a></li>
+                    <li style="display:none;" id="logoutMenu"><a href="#" class="btn">Logout</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+
+        <section id="listing">
+            <div class="container">
+                <h2>All Available Dogs For Adoption</h2>
+                <div class="filter">
+                    <!-- <h3>Filter Results By:</h3> -->
+                    <form method="post" class="filter-form">
+                        <div class="filter-by">
+                            <label for="breed"> Breed</label>
+                            <select name="breed" id="breed">
+                                <option value="all" selected> All</option>
+
+                            </select>
+                        </div>
+                        <div class="filter-by">
+                            <label for="breed"> Age</label>
+                            <select name="age" id="age">
+                                <option value="all"> All</option>
+                                <option value="1">1 or less</option>
+                                <option value="2">2 or less</option>
+                                <option value="3">3 or less</option>
+                                <option value="4">4 or less</option>
+                                <option value="5">5 or less</option>
+                            </select>
+                        </div>
+                        <div class="filter-by">
+                            <label for="breed"> Gender</label>
+                            <select name="gender" id="gender">
+                                <option selected disabled> Select Gender</option>
+                                <option value="male">Male</option>
+                                <option value="female">Female</option>
+                            </select>
+                        </div>
+                        <div class="filter-by">
+
+                            <a href="#" class="btn btn-dark" id="reset">Reset Filter</a>
+                        </div>
+                    </form>
+                </div>
+                <div class="grid list-content mt-4" id="doglist">
+
+                </div>
+
+
+            </div>
+        </section>
+
+    </main>
+    <footer>
+        <div id="loader"></div>
+        <p>
+            © 2024 Pet Adoption Center | Contact : + 407-2568-8877
+        </p>
+    </footer>
+</body>
+
+<script type="module" src="../js/doglistpage.js"></script>
+<script type="module" src="../js/logout.js"></script>
+
+</html>

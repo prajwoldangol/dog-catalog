@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu+Sans:ital,wght@0,100..800;1,100..800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/index.css">
+    <title>Adopt A Dog</title>
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <nav>
+                <ul id="navigation">
+                    <li><a href="../index.html">Home</a></li>
+                    <li id="viewPets"><a href="/pages/pets.html">View All Pets</a></li>
+
+
+                    <li style="margin-left:auto;" id="loginMenu"><a href="/pages/login.html" class="btn">Login</a></li>
+
+                    <li id="registerMenu"><a href="/pages/register.html" class="btn btn-purple">Sign Up</a></li>
+                    <li style="display:none;" id="logoutMenu"><a href="#" class="btn">Logout</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <section class="mt-6 hero">
+            <div class="container grid grid-2-col-custom">
+                <div class="hero-content">
+                    <h1> Start Your Pet Adoption journey with us Today !</h1>
+                    <p class="mt-2">Discover the joy of unconditional love by adopting a dog in need. Give a homeless
+                        pup a forever
+                        home and change both your lives for the better.</p>
+                    <a href="#listing" class="btn btn-dark mt-2 "> Adopt Happiness</a>
+                </div>
+
+                <img src="images/header-bg.png" alt="dog-header" srcset="">
+            </div>
+
+        </section>
+        <section id="listing">
+            <div class="container">
+                <h2>Dogs Available For Adoption</h2>
+                <div class="grid list-content mt-4" id="doglist">
+
+                </div>
+                <div class="text-center">
+                    <a href="pages/pets.html" class="btn btn-dark mt-2">View More</a>
+                </div>
+
+            </div>
+        </section>
+        <section id="process">
+            <div class="container">
+                <h2>Adoption Process</h2>
+                <div class="grid timeline-content mt-4">
+                    <div class="card">
+                        <picture>
+                            <img src="images/icons/bubbles4.svg" alt="dog1" srcset="">
+                            <span>Get in Touch</span>
+                        </picture>
+                        <div class="content-left">
+                            <p> Our team is here to assist you every step of the process from start to end.</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <picture>
+                            <img src="images/icons/calendar.svg" alt="dog1" srcset="">
+                            <span>Schedule a Visit</span>
+                        </picture>
+                        <div class="content-left">
+                            <p> Schedule a visit with us today and come meet your future furry friends</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <picture>
+                            <img src="images/icons/file-text.svg" alt="dog1" srcset="">
+                            <span>Sign the Papers</span>
+                        </picture>
+                        <div class="content-left">
+                            <p> Our team will guide you through all necessary paperwork required for the adoption.</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <picture>
+                            <img src="images/icons/home.svg" alt="dog1" srcset="">
+                            <span>Take Home</span>
+                        </picture>
+                        <div class="content-left">
+                            <p> Once all the process are complete, you are good to go along your beloved pet.</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>
+            © 2024 Pet Adoption Center | Contact : + 407-2568-8877
+        </p>
+    </footer>
+</body>
+
+<script type="module" src="js/homepage.js"></script>
+<script type="module" src="js/logout.js"></script>
+
+</html>
