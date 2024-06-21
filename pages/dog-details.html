@@ -10,79 +10,27 @@
         rel="stylesheet">
     <link rel="stylesheet" href="../css/index.css">
     <title>Details</title>
-    <style>
-        .details {
-            display: flex;
-            gap: 3rem;
-            margin-bottom: 2rem
-        }
 
-
-        .details-content {
-            flex: 1;
-        }
-
-        .details-content>h2 {
-            text-align: left;
-            letter-spacing: 2px;
-        }
-
-        .details-content>p {
-            font-size: 1.25rem;
-        }
-
-        .details-table,
-        td {
-            margin-top: 1rem;
-            padding: 1rem;
-            width: min(35rem, 100%);
-            border-collapse: col-lapse;
-            font-size: 1.25rem;
-            text-transform: capitalize;
-
-        }
-
-        .details-table {
-            border: 5px solid #dddeeb;
-        }
-
-        .left {
-            font-weight: 600;
-            text-transform: uppercase;
-        }
-
-        .details-table>caption {
-            margin-bottom: 0.5rem;
-            font-weight: 600;
-        }
-
-        tbody tr:nth-child(odd) {
-            background-color: #f3e5fc;
-        }
-
-        tbody tr:nth-child(even) {
-            background-color: #ede5fc;
-        }
-
-
-
-        .image>img {
-            border-radius: 1rem;
-        }
-    </style>
 </head>
 
 <body>
     <header>
         <div class="container">
             <nav>
+                <div class="mobile-menu">
+                    <div class="menu-items">
+                        <span class="custom-bars"></span>
+                        <span class="custom-bars"></span>
+                        <span class="custom-bars"></span>
+                    </div>
+
+                </div>
                 <ul id="navigation">
                     <li><a href="/dog-catalog/index.html">Home</a></li>
                     <li id="viewPets"><a href="/dog-catalog/pages/pets.html">View All Pets</a></li>
 
 
-                    <li style="margin-left:auto;" id="loginMenu"><a href="/dog-catalog/pages/login.html"
-                            class="btn">Login</a></li>
+                    <li id="loginMenu"><a href="/dog-catalog/pages/login.html" class="btn">Login</a></li>
 
                     <li id="registerMenu"><a href="/dog-catalog/pages/register.html" class="btn btn-purple">Sign Up</a>
                     </li>
@@ -114,5 +62,6 @@
 
 <script type="module" src="../js/detailspage.js"></script>
 <script type="module" src="../js/logout.js"></script>
+<script type="module" src="../js/menu.js"></script>
 
 </html>

@@ -10,92 +10,27 @@
         rel="stylesheet">
     <link rel="stylesheet" href="../css/index.css">
     <title>View all Pets</title>
-    <style>
-        #listing {
-            background: transparent;
-            margin-top: 2rem;
-        }
 
-        .filter {
-            margin-block: 2rem;
-            padding: 1.5rem;
-            background: rgba(255, 255, 255, 0.35);
-            border-radius: 1rem;
-        }
-
-        .filter-form {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 3rem;
-            justify-content: center;
-
-        }
-
-        .filter-by {
-            display: flex;
-            flex-direction: column;
-            flex-basis: 15rem;
-            text-align: center;
-            /* justify-content: center; */
-
-        }
-
-        .filter-by label {
-            font-weight: 600;
-            margin-bottom: 0.5rem;
-            font-size: 1.25rem;
-        }
-
-        .filter-by:last-child {
-            flex-basis: 10rem;
-            padding: 1rem;
-        }
-
-        select {
-
-            height: 2.5rem;
-            cursor: pointer;
-            outline: none;
-            font-size: 1.2rem;
-            padding-inline: 1rem;
-            border: 2px solid #000000;
-            border-radius: 0.5rem;
-            font-weight: 500;
-
-        }
-
-        select:focus {
-            outline: none;
-            border-color: #6045c8;
-        }
-
-        .filter-by>a {
-            cursor: pointer;
-            margin-top: 0.5rem;
-            padding-block: 1rem;
-            font-size: 1rem;
-
-        }
-
-        p.no-result {
-            text-align: center;
-            font-size: 2rem;
-            font-weight: 600;
-        }
-    </style>
 </head>
 
 <body>
     <header>
         <div class="container">
             <nav>
+                <div class="mobile-menu">
+                    <div class="menu-items">
+                        <span class="custom-bars"></span>
+                        <span class="custom-bars"></span>
+                        <span class="custom-bars"></span>
+                    </div>
+
+                </div>
                 <ul id="navigation">
                     <li><a href="/dog-catalog/index.html">Home</a></li>
                     <li id="viewPets"><a href="/dog-catalog/pages/pets.html">View All Pets</a></li>
 
 
-                    <li style="margin-left:auto;" id="loginMenu"><a href="/dog-catalog/pages/login.html"
-                            class="btn">Login</a></li>
+                    <li id="loginMenu"><a href="/dog-catalog/pages/login.html" class="btn">Login</a></li>
 
                     <li id="registerMenu"><a href="/dog-catalog/pages/register.html" class="btn btn-purple">Sign Up</a>
                     </li>
@@ -110,7 +45,7 @@
             <div class="container">
                 <h2>All Available Dogs For Adoption</h2>
                 <div class="filter">
-                    <!-- <h3>Filter Results By:</h3> -->
+
                     <form method="post" class="filter-form">
                         <div class="filter-by">
                             <label for="breed"> Breed</label>
@@ -163,5 +98,6 @@
 
 <script type="module" src="../js/doglistpage.js"></script>
 <script type="module" src="../js/logout.js"></script>
+<script type="module" src="../js/menu.js"></script>
 
 </html>
