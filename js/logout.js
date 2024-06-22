@@ -14,7 +14,7 @@ const updateNavigation = () => {
   if (isLoggedIn()) {
     const loggedInUser = JSON.parse(localStorage.getItem("loggedInUser"));
     const welcomeMessage = `
-    <li id="welcomeMessage" style="margin-left:auto">
+    <li id="welcomeMessage">
       Welcome ${loggedInUser.username}
     </li>
   `;

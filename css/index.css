@@ -133,8 +133,8 @@ nav > ul {
   gap: 1.5rem;
   /* padding-block: 1.25rem; */
 }
-.hero {
-  /* height: 80vh; */
+#welcomeMessage {
+  margin-left: auto;
 }
 .hero img,
 .img-wrap img {
@@ -457,6 +457,9 @@ tbody tr:nth-child(even) {
 }
 
 @media (max-width: 767px) {
+  #welcomeMessage {
+    margin-left: 0;
+  }
   .menu-items {
     padding-left: 1rem;
     display: flex;
